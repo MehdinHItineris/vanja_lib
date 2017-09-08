@@ -79,7 +79,6 @@
     <Container class="javax.swing.JSplitPane" name="mainSplitPane">
       <Properties>
         <Property name="dividerLocation" type="int" value="200"/>
-        <Property name="dividerSize" type="int" value="5"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[47, 26]"/>
         </Property>

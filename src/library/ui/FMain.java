@@ -131,7 +131,10 @@ public class FMain extends javax.swing.JFrame  {
                 break;            
             case "Bibliotekari":
                 dataTable.setModel(LibrarianHelper.getTableModel());
-                break;            
+                break;
+            case "Studenti":
+                dataTable.setModel(StudentHelper.getTableModel());
+                break;
             default:
                 break;
         }        

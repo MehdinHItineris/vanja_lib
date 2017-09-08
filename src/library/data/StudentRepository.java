@@ -1,14 +1,13 @@
 package library.data;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import library.model.Student;
+import java.util.Collection;
 
 public class StudentRepository extends Repository {
     public void add(Student entity) {
         persist(entity);
     }
-}
+
 
     public void update(Student entity) {
         
@@ -21,4 +20,5 @@ public class StudentRepository extends Repository {
     public Collection<Student> getAll() {        
         return (Collection<Student>) getResultList("SELECT e FROM Student e");
     }
+
 }
