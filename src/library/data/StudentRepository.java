@@ -9,3 +9,16 @@ public class StudentRepository extends Repository {
         persist(entity);
     }
 }
+
+    public void update(Student entity) {
+        
+    }
+    
+    public Student getById(Long id) {
+        return (Student)getSingleResult("SELECT e FROM Student e WHERE e.id = " + id.toString());
+    }
+    
+    public Collection<Student> getAll() {        
+        return (Collection<Student>) getResultList("SELECT e FROM Student e");
+    }
+}
